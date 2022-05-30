@@ -27,12 +27,12 @@ code {
   border: none;
   color: white;
   border-radius: 4px;
-  width:70%;
-  height:30%;
+  padding:20px 20px;  
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left:50px;
+  margin-left: 30px;
+  margin-right: 30px;
   cursor: pointer;
 }
