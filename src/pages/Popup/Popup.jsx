@@ -18,10 +18,10 @@ const addresses = [
 ];
 
 const payment = [
-	{ method: "xx23 VISA" },
-	{ method: "xx11 MAESTRO" },
-	{ method: "xx90 AMEX" },
-	{ method: "xx56 MASTERCARD" },
+	{ method: "paytm_ewallet" },
+	{ method: "upi_bank" },
+	{ method: "googlepay_upi_bank" },
+	{ method: "pnbcorp_bank" },
 ];
 
 const PinSection = ({ enteredPin, setEnteredPin }) => {
@@ -40,6 +40,7 @@ const PinSection = ({ enteredPin, setEnteredPin }) => {
 			textAlign: "center",
 		},
 	};
+
 	const [status, setStatus] = useState({
 		isLoading: null,
 		isError: false,
@@ -293,7 +294,7 @@ const Popup = () => {
 			<div className="flex flex-col justify-between w-full max-w-md p-2 pt-0 mx-auto space-y-6 rounded-2xl">
 				<div className="">
 					<span className="mb-4 text-sm font-light text-zinc-400">
-						Evening, John Doe!
+						Greetings, Kartik Goel!
 					</span>
 					<Address
 						selected={addressSelected}
@@ -309,6 +310,10 @@ const Popup = () => {
 					enteredPin={enteredPin}
 					setEnteredPin={setEnteredPin}
 				/>
+
+				<a href="http://demo-ecommerceapp.vercel.app/orderplaced">
+					<button type="button" className="checkout-btn">Checkout with Horizon</button>
+				</a>
 			</div>
 		</div>
 	);
